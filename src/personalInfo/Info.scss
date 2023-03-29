@@ -1,0 +1,95 @@
+// colors
+:root{
+
+
+    --Marineblue: hsl(213, 96%, 18%);
+    --Purplishblue: hsl(243, 100%, 62%);
+    --Pastelblue: hsl(228, 100%, 84%);
+    --Lightblue: hsl(206, 94%, 87%);
+    --Strawberryred: hsl(354, 84%, 57%);
+
+    --Coolgray: hsl(231, 11%, 63%);
+    --Lightgray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width:768px){
+
+
+    .infoDetails{
+
+        
+
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        width: 90%;
+        border: 2px solid transparent;
+        top: 13%;
+        position: absolute;
+        margin: 1rem;
+        border-radius: 10px;
+        background-color: var(--Alabaster);
+        
+
+        .detailsDiv{
+
+              margin:1rem;
+              flex-direction: column;
+
+            .heading{
+                color: var(--Marineblue);
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            p{
+                color: var(--Coolgray);
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            .lblText {
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            input,select {
+                width:90%;
+                border-radius: 4px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                margin: 8px 0;
+                display: inline-block;
+                padding: 12px 20px;
+            }
+        }
+        
+
+        
+
+    }
+
+    .footer {
+        position: fixed;
+   left: 0;
+   bottom: 25px;
+   width: 100%;
+//    background-color: red;
+   color: white;
+   text-align: center;
+
+
+        .next{
+            background-color: var(--Marineblue);
+            color: var(--Alabaster);
+            padding: 8px 10px;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            width: 30%;
+            font-size: 16px;
+        }
+    }
+}
